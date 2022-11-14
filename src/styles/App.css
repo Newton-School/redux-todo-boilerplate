@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+#main {
+  width: 50%;
+  padding: 40px;
+  margin: 0 auto;
+  transition: all .3s;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 35px;
+}
+
+#newTodo {
+  position: relative;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+}
+
+#newTodo input {
+  width: 75%;
+  height: 60px;
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid #d1d3d4;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+}
+
+#newTodo input:focus {
+  outline: none;
+  border-color: #8052ec;
+}
+
+#newTodo button {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #8052ec;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#todos {
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .3);
+  width: 100%;
+  position: relative;
+}
+
+.todo {
+  background-color: #fff;
+  height: 60px;
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.todo-name {
+  flex-grow: 2;
+}
+
+.todo:first-of-type {
+  margin-top: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.todo span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.todo button {
+  background-color: #8052ec;
+  color: #fff;
+  height: 100%;
+  width: 28px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media all and (max-width: 1500px) {
+  #main {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #main {
+    width: 90%;
+    min-width: 320px;
+    padding: 20px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  #newTodo {
+    padding: 15px;
+  }
+
+  #newTodo input {
+    height: 45px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  #newTodo button {
+    height: 45px;
+    font-size: 15px;
+  }
+
+  #todos {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .todo {
+    height: 45px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .todo span {
+    font-size: 15px;
+  }
+
+  .todo button {
+    width: 23px;
+  }
+}
